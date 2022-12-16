@@ -77,9 +77,14 @@ class ListaInvertida:
         if not retorno_busca:
             print('Não existe nenhuma ocorrencia desse valor')
         else:
+            n_objeto = 0
             for linha in retorno_busca:
-                # TODO: deixar print bonito
-                print(self.data[linha])
+                n_objeto += 1
+                print('\n')
+                print(f'Pessoa {n_objeto}')
+                for key in self.data[linha].keys():
+                    print(f'{key}: {self.data[linha][key]}')
+                
 
     def busca_complexa(self):
         print('Colunas:')
@@ -101,9 +106,13 @@ class ListaInvertida:
         if not retorno_busca:
             print('Não existe nenhuma ocorrencia desse valor')
         else:
+            n_objeto = 0
             for linha in retorno_busca:
-                # TODO: deixar print bonito
-                print(self.data[linha])
+                n_objeto += 1
+                print('\n')
+                print(f'Pessoa {n_objeto}')
+                for key in self.data[linha].keys():
+                    print(f'{key}: {self.data[linha][key]}')
 
     def mostrar_todos_elementos(self):
         # TODO: implementar um mostrar tudo bonito
